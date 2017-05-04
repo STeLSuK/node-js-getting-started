@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
- <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<title>Node.js Getting Started on Heroku</title>
-	<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
-</head>
-
-<body>
-<div> #100днейкода</div>
-</div>
-
-
-</body>
+ <head>
+  <title>canvas</title>
+   <meta charset="utf-8">
+  <script> 
+   window.onload = function() {
+    var drawingCanvas = document.getElementById('knopka');
+    if(drawingCanvas && drawingCanvas.getContext) {
+     var context = drawingCanvas.getContext('2d');
+    
+    context.fillStyle = "red";
+    context.fillRect(0,200,100,100);
+      
+    context.fillStyle = "blue";
+    context.fillRect(200,200,100,100);
+    }
+   }
+  </script>
+ </head>
+ <body>
+  <canvas id="knopka" width="1000" height="1000">
+    <p>Ваш браузер не поддерживает рисование.</p>
+  </canvas>
+ </body>
 </html>
